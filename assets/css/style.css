@@ -4,36 +4,12 @@
 	margin: 0 auto;
 	
 
-
 }
 
-.right-div {
-	width: 480px;
-	height: 650px;
-	border: dotted;
-	display: inline-block;
-	float: left;
+
+.panel {
+	border: solid;
 	background-color: white;
-	text-align: center;
-}
-
-.left-div {
-	width: 480px;
-	height: 650px;
-	border: dotted;
-	display: inline-block;
-	float: right;
-	background-color: white;
-	text-align: center;
-	
-}
-
-h1 {
-	text-align: center;
-	background-color: white;
-	color: red;
-}
-
-img {
-	margin-top: 20px;
+	margin: 20px;
+	height: 90px;
 }

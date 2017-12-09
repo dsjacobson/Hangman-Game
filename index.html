@@ -5,14 +5,14 @@
 
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 
 
 <style>
 		.bckgimg {
-			background-image: url(assets/images/baseballs.png);
-
+			background-image: url(assets/images/baseball-field.jpg);
+			background-size: cover;
 		}
 
 </style>
@@ -23,51 +23,49 @@
 
 	
 
-	<div class="container">
+	<div class="container" style="text-align: center">
 
-		<header>
-			<h1>Hangman</h1>
-		</header>
+		<div class="jumbotron">
+				<h1>Hangman</h1>
+		</div>
 		
-		<span>	
-			<div class="left-div">
-				<img src="http://via.placeholder.com/350x150">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Word to Guess</h3>
 			</div>
-			
-			<div class="right-div">
-			
-				<h2>Press any key to get started!</h2>
-				<br>
-				Wins
-				<div id="win-total"></div>
-				<br>
-				Current Word
-				<div id="current-word"></div>
-				<br>
-				Dashed Keyword
-				<br>
-				<span id="dashed-word"></span>
-				<br>
-				<br>
-				Dashed Keyword 2
-				<br>
-				<span id="dashed-word-2"></span>
-				<br>
-				<br>
-				Number of Guesses Remaining
-				<div id="guesses-remaining"></div>
-				<br>
-				Letters Already Guessed
-				<div id="letters-guessed"></div>
-				<div id="letters-guessed-2"></div>
-
-			</div>	
-		</span>
+			<div class="panel-body">
+				<h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+			</div>
+		</div>
 
 
-
-
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Wrong Guesses:<span id="wrongGuesses"></span>
+		</div>
 	</div>
+	
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Guesses Left: <span id="numGuesses"></span>
+		</div>
+	</div>
+
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Wins:<span id="winCounter"></span>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Losses:<span id="lossCounter"></span>
+		</div>
+	</div>
+
+
 
 
 <script type='text/javascript' src="assets/javascript/game.js"></script>
