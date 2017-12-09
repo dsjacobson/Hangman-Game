@@ -13,3 +13,8 @@
 	margin: 20px;
 	height: 90px;
 }
+
+#wrongGuesses{
+	font-size: 24px;
+	color: red;
+}
